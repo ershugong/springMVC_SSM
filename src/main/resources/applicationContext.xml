@@ -40,7 +40,7 @@
     </bean>
 
     <!--04.配置service-->
-    <bean id="userService" class="cn.jpp.service.UserInfoServiceImpl">
+    <bean id="userService" class="cn.jpp.service.imlp.UserInfoServiceImpl">
         <property name="dao" ref="IUserInfoDAO"></property>
     </bean>
 

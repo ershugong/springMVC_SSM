@@ -7,7 +7,8 @@
         <package name="cn.jpp.entity"/>
     </typeAliases>
     <mappers>
-        <!--<mapper resource="cn/happy/entity/IUserInfoDAO.xml" /> -->
-        <package name="cn.jpp.dao"/>
+        <!--<mapper resource="cn/jpp/dao/impl/UserInfoDAO.xml" />
+        <package name="cn.jpp.dao.impl"/>-->
+        <mapper resource="cn/happy/UserInfoDAO.xml"/>
     </mappers>
 </configuration>

@@ -27,11 +27,6 @@
 </head>
 
 <body>
-<h1>SSM整合</h1>
-<form action="<%=basePath%>userAction.do" method="post">
-    用户名：<input name="name"/> <br/>
-    用户年龄<input name="age"/><br/>
-    <input type="submit" value="save"/>
-</form>
+<h1>添加成功</h1>
 </body>
 </html>

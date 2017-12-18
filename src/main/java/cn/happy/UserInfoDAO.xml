@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.jpp.dao.IUserInfoDAO">
+    <!--<select id="add" parameterType="UserInfo">
+        insert into userinfo(name,age) values(#{name},#{age})
+    </select>-->
+    <insert id="add" parameterType="cn.jpp.entity.UserInfo">
+        <selectKey keyProperty="id" resultType="long">
+            SELECT  LAST_INSERT_ID()
+        </selectKey>
+        insert into userinfo(name,age) values(#{name},#{age})
+    </insert>
+</mapper>
